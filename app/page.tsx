@@ -15,7 +15,7 @@ function page() {
      {/* judul utama */}
      <div className='text-[#282a29] mt-5 max-sm:mt-2'>
      <h1 className='2xl:text-8xl text-4xl xl:text-6xl lg:text-5xl font-JetBrain font-bold'>
-      Hello I'm
+      Hello I&apos;m
      </h1>
      <h1 className='2xl:text-8xl text-4xl xl:text-6xl lg:text-5xl font-FiraBold'>
       Dewa Permana.
