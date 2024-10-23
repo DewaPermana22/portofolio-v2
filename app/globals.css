@@ -24,3 +24,18 @@ body {
   font-family: 'JetBrain';
   src: url("./fonts/JetBrainsMono-VariableFont_wght.ttf");
 }
+
+@font-face {
+  font-family: 'FiraBold';
+  src: url("./fonts/FiraSansCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'FiraMedium';
+  src: url("./fonts/FiraSansCondensed-Medium.ttf");
+}
+
+
+.space{
+  word-spacing: 10px;
+}

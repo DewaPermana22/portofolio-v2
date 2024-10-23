@@ -13,8 +13,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily : {
-        'JetBrain' : "JetBrain"
-      }
+        'JetBrain' : "JetBrain",
+        'FiraBold' : "FiraBold",
+        'FiraMedium' : "FiraMedium"
+      },
     },
   },
   plugins: [],
