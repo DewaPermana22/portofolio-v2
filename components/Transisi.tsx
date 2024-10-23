@@ -1,8 +1,12 @@
 "use client";
 import { AnimatePresence,motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { ReactNode } from "react";
 
-const Transisi = ({children}) => {
+type TransisiProps = {
+    children: ReactNode;
+  };
+const Transisi = ({children} : TransisiProps) => {
     const pathName = usePathname();
     return <AnimatePresence>  
         <div key={pathName}>
