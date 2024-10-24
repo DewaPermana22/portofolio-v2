@@ -4,12 +4,12 @@ import Navbar from '../Navbar'
 import Image from 'next/image'
 function Header() {
   return (
-    <header className='flex relative -top-10 justify-between items-center '>
+    <header className='flex bg-[#ffe6a7] relative xl:-mt-9 justify-between items-center '>
     <Link href="/" >
     <Image
     src ="/Dewapermana..svg"
     alt='logo'
-    className='w-36 xl:w-44'  
+    className='w-32 lg:w-36 2xl:w-44'
     width="200"
     height="200"/>
     </Link>
