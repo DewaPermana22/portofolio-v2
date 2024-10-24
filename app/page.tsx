@@ -7,12 +7,7 @@ import Button from '@/components/Button'
 import Footer from '@/components/ui/Footer'
 import { Variants, motion } from 'framer-motion';
 
-interface cursorPosition{
-  x : number;
-  y : number;
-}
-
-const  page = () => {
+const  Page = () => {
   const [cursorVariant, setCursorVariant] = useState('default');
   const [cursorPosition, setCursorPosition] = useState({x:0,y:0});
 
@@ -102,4 +97,4 @@ const  page = () => {
   )
 }
 
-export default page
+export default Page
