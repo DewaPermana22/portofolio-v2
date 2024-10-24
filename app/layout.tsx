@@ -15,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html style={{scrollbarWidth:'none'}} lang="en">
       <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
-      <body className="overflow-hidden">
+      <body>
         <Header/>
         <EfekTransisi/>
         <Transisi>

@@ -31,9 +31,9 @@ const Navbar = () => {
     const navMenu = usePathname();
 return(
     <>
-    <nav className=" px-10 hidden lg:flex font-JetBrain xl:pt-0 pt-10 gap-6 text-lg xl:text-xl">
+    <nav className=" px-10 hidden lg:flex font-JetBrain 2xl:pt-0 pt-10 gap-6 text-lg xl:text-xl">
         {Navigasi.map((link, index) => {
-            return <Link href={link.path} key={index} className={`${link.path === navMenu && "border-b-2 border-[#282a29]"} capitalize hover:text-[#bc6c25] duration-500 ease-in-out transition-all font-bold`}>
+            return <Link href={link.path} key={index} className={`${link.path === navMenu && "border-b-2 border-[#282a29]"} capitalize hover:text-[#bc6c25] text-[#282a29] duration-500 ease-in-out transition-all font-bold`}>
                     {link.name}
                     </Link>
         })}
