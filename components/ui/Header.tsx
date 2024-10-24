@@ -4,7 +4,7 @@ import Navbar from '../Navbar'
 import Image from 'next/image'
 function Header() {
   return (
-    <header className='flex bg-[#ffe6a7] relative xl:-mt-9 justify-between items-center '>
+    <header className='flex bg-[#ffe6a7] relative xl:-mt-9 -mt-7 justify-between items-center '>
     <Link href="/" >
     <Image
     src ="/Dewapermana..svg"
