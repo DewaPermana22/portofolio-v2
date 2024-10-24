@@ -12,9 +12,9 @@ interface cursorPosition{
   y : number;
 }
 
-const  page : React.FC = () => {
-  const [cursorVariant, setCursorVariant] = useState<'default' | 'hover'>('default');
-  const [cursorPosition, setCursorPosition] = useState<cursorPosition>({x:0,y:0});
+const  page = () => {
+  const [cursorVariant, setCursorVariant] = useState('default');
+  const [cursorPosition, setCursorPosition] = useState({x:0,y:0});
 
   const ambilPosisiKursor = (e : MouseEvent) => {
     setCursorPosition({x : e.clientX, y : e.clientY});
