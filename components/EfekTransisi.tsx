@@ -9,7 +9,7 @@ const EfekTransisi = () => {
     <>
     <AnimatePresence mode="wait">
         <div key={pathName}>
-            <div className='h-screen w-screen fixed top-0 left-0 flex z-40 pointer-events-none right-0'>
+            <div className='h-screen w-screen fixed top-0 left-0 flex z-[100] pointer-events-none right-0'>
                 <Efek/>
             </div>
 
