@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React, { useState } from 'react'
@@ -9,7 +8,7 @@ import { Swiper as SwiperTypes } from 'swiper';
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 
-const projects = [
+const Projects = [
   {
     num : "01",
     category : "fullstack",
@@ -34,11 +33,11 @@ const projects = [
 ];
 
 function page() {
-  const [project,setProject] = useState(projects[0]);
+  const [Project,SetProject] = useState(Projects[0]);
 
   const handleSlideChange = (swiper : SwiperTypes) => {
     const currentIndex = swiper.activeIndex;
-    setProject(projects[currentIndex])
+    SetProject(Projects[currentIndex])
   }
   return (
     <motion.section 
@@ -49,13 +48,13 @@ function page() {
         <div className='flex flex-col xl:flex-row xl:gap-[30px] '>
           <div className='w-full xl:w-[50%] xl:h-[406px] xl:flex text-[#282a29] flex-col xl:justify-between order-2 xl:order-none'>
             <div className='flex flex-col gap-[30px]'>
-              <div className='text-8xl font-JetBrain font-extrabold leading-none text-outline'>{project.num}</div>
-              <h2 className='text-[42px] leading-none text-[#282a29] font-JetBrain font-bold capitalize'>{project.category} project</h2>
-              <p className='text-[#282a29]/80 font-FiraMedium text-lg'>{project.desxription}</p>
+              <div className='text-8xl font-JetBrain font-extrabold leading-none text-outline'>{Project.num}</div>
+              <h2 className='text-[42px] leading-none text-[#282a29] font-JetBrain font-bold capitalize'>{Project.category} P</h2>
+              <p className='text-[#282a29]/80 font-FiraMedium text-lg'>{Project.desxription}</p>
               <ul className='text-lg font-JetBrain font-bold capitalize flex gap-4'>
-                {project.stack.map((item, index) => {
+                {Project.stack.map((item, index) => {
                   return <li key={index}>{item.name}
-                  {index !== project.stack.length -1 && ","}</li>
+                  {index !== Project.stack.length -1 && ","}</li>
                 })}
               </ul>
               <div className='border border-[#282a29]/70'></div>
@@ -65,12 +64,12 @@ function page() {
           <div className='w-full xl:w-[50%]'>
           <Swiper spaceBetween={30} slidesPerView={1} className='xl:h-[520px] mb-12'
           onSlideChange={handleSlideChange}>
-            {projects.map((project, index) => {
+            {Projects.map((Project, index) => {
               return ( <SwiperSlide key={index} className='w-full'>
                 <div className='h-[460px] relative group flex justify-center items-center bg-pink-50'>
                   <div></div>
                   <div className='relative w-full h-full'>
-                    <Image src={project.image} fill className='object-cover' alt='project'/>
+                    <Image src={Project.image} fill className='object-cover' alt='project'/>
                   </div>
                 </div>
               </SwiperSlide>
