@@ -2,21 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffe6a7;
-  --foreground: #282a29;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffe6a7;
-    --foreground: #282a29;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,5 +24,12 @@ body {
 
 .space{
   word-spacing: 10px;
+}
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
 

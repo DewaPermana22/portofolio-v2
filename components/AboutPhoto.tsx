@@ -11,7 +11,7 @@ const AboutPhoto = () => {
             opacity: 1,
             transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="relative filter grayscale hover:grayscale-0 transition-all duration-500 ease-in-out hover:scale-105 lg:w-[550px] max-sm:w-[400px] max-sm:h-[400px] lg:h-[550px] 2xl:w-[498px] 2xl:h-[498px]"
+          className="relative filter grayscale hover:grayscale-0 overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 lg:w-[550px] max-sm:w-[400px] max-sm:h-[400px] lg:h-[550px] 2xl:w-[600px] 2xl:h-[600px]"
         >
           <Image
             src="/about.svg"
@@ -19,7 +19,7 @@ const AboutPhoto = () => {
             quality={100}
             fill
             alt="ProfilPict"
-            className="object-contain"
+            className="h-full w-full overflow-hidden"
           />
         </motion.div>
   )
