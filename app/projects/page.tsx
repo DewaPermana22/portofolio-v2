@@ -32,7 +32,7 @@ const Projects = [
   },
 ];
 
-function page() {
+function Page() {
   const [Project,SetProject] = useState(Projects[0]);
 
   const handleSlideChange = (swiper : SwiperTypes) => {
@@ -83,4 +83,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
