@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth bg-[#ffe6a7]" style={{scrollbarWidth:'none'}} lang="en">
+    <html className="scroll-smooth bg-[#ffe6a7] max-sm:overflow-x-hidden lg:overflow-hidden" style={{scrollbarWidth:'none'}} lang="en">
       <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       <body>
         <Header/>

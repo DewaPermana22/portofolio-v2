@@ -4,9 +4,10 @@ import Image from 'next/image';
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Swiper as SwiperTypes } from 'swiper';
+import {Autoplay} from 'swiper/modules';
+import { Swiper as SwiperTypes } from 'swiper/types';
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-
+import 'swiper/css/autoplay';
 
 
 const Projects = [
@@ -65,14 +66,19 @@ function Page() {
             </div>
             </div>
           <div className='w-full xl:w-[50%]'>
-          <Swiper spaceBetween={30} slidesPerView={1} className='xl:h-[520px] mb-12'
-          onSlideChange={handleSlideChange}>
+          <Swiper 
+          modules={[Autoplay]}
+          autoplay={{delay: 5000, disableOnInteraction: false}}
+          spaceBetween={30} slidesPerView={1} className='xl:h-[520px] mb-12'
+          onSlideChange={handleSlideChange}
+          grabCursor={true} touchRatio={1} resistanceRatio={0.85}
+          >
             {Projects.map((Project, index) => {
               return ( <SwiperSlide key={index} className='w-full'>
                 <div className='h-[460px] max-sm:h-[360px] relative group flex justify-center items-center bg-pink-50'>
                   <div></div>
                   <div className='relative w-full h-full'>
-                    <Image src={Project.image} fill className='object-cover' alt='project'/>
+                    <Image src={Project.image} fill className='object-cover pointer-events-none' alt='project'/>
                   </div>
                 </div>
               </SwiperSlide>

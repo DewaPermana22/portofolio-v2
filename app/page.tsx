@@ -8,7 +8,7 @@ import Footer from '@/components/ui/Footer'
 const  Page = () => {
   return (
     <>
-    <main className='bg-[#ffe6a7] flex max-sm:flex-col-reverse md:flex-row items-center md:px-12 lg:px-0 justify-around'>
+    <main className='bg-[#ffe6a7] lg:max-h-screen flex max-sm:flex-col-reverse md:flex-row items-center md:px-12 lg:px-0 justify-around'>
       <div className='xl:ms-0 text-center xl:order-none lg:-mt-8 2xl:-mt-0 md:text-start text-[#282a29]'>
      <h1 className='lg:text-xl lg:mt-5 2xl:mt-0 2xl:text-2xl text-sm sm:text-lg font-JetBrain font-extrabold'
      >

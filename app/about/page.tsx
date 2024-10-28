@@ -90,11 +90,12 @@ const About: React.FC = () => {
           <h1 className="2xl:text-2xl text-lg max-sm:text-sm text-[#282a29] font-FiraMedium">
             From there, I have learned a lot about the programming world, from web development to desktop application development.
           </h1>
-          <h1 className="text-2xl 2xl:text-4xl text-[#282a29] font-FiraMedium mt-5 mb-2">My Skills:</h1>
+          <h1 className="text-2xl 2xl:text-4xl text-[#282a29] font-FiraMedium mt-3 mb-2">My Skills:</h1>
           <SkillBar skill="Fullstack" percentage={45} />
           <SkillBar skill="Frontend" percentage={60} />
           <SkillBar skill="Backend" percentage={40} />
           <SkillBar skill="Databases & Query" percentage={55} />
+          <SkillBar skill="Programming Mentor" percentage={75} />
         </div>
         </div>
       
