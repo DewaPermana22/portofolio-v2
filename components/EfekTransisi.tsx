@@ -14,7 +14,7 @@ const EfekTransisi = () => {
             </div>
 
             <motion.div
-            className='h-screen w-screen fixed bg-[#99582a] top-0 pointer-events-none'
+            className='h-screen w-screen fixed z-[3] bg-[#99582a] top-0 pointer-events-none'
             initial={{opacity:1}}
             animate={{
                 opacity:0,

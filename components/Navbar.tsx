@@ -39,11 +39,11 @@ const Navbar = () => {
     if (isOpen) {
       gsap.fromTo(
         menuRef.current,
-        { x: '100%', opacity: 0 }, // Menu mulai dari kanan luar layar
-        { x: '0%', opacity: 1, duration: 0.5, ease: 'power3.out' } // Menu muncul ke layar dengan animasi
+        { x: '10', opacity: 0 }, // Menu mulai dari kanan luar layar
+        { x: '0', opacity: 1, duration: 0.5, ease: 'power3.out' } // Menu muncul ke layar dengan animasi
       );
     } else {
-      gsap.to(menuRef.current, { x: '10%', opacity: 0, duration: 0.5, ease: 'power3.in' }); // Menu menghilang ke kanan
+      gsap.to(menuRef.current, { x: '10', opacity: 0, duration: 0.5, ease: 'power3.in' }); // Menu menghilang ke kanan
     }
   }, [isOpen]); // Hanya aktif ketika isOpen berubah
 
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Menu navigasi untuk layar kecil */}
       <nav
         ref={menuRef}
-        className="px-10 absolute lg:hidden mt-5 flex flex-col overflow-hidden z-[1] w-full top-0 pt-40 bg-[#ffe6a7] h-dvh items-center font-JetBrain gap-6 text-lg xl:text-xl"
+        className=" absolute lg:hidden mt-5 flex flex-col overflow-hidden z-[1] w-full top-0 pt-40 bg-[#ffe6a7] h-dvh items-center font-JetBrain gap-6 text-lg xl:text-xl"
         style={{ opacity: 0, transform: 'translateX(10%)' }}
       >
         {Navigasi.map((link, index) => {
