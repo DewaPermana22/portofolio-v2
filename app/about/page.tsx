@@ -80,8 +80,8 @@ const SkillBar: React.FC<SkillBarProps> = ({ skill, percentage }) => {
 
 const About: React.FC = () => {
   return (
-    <main className="bg-[#ffe6a7] max-sm:pb-20 overflow-auto">
-      <div className="flex max-sm:flex-col justify-center 2xl:-mt-0 -mt-10 max-sm:-mt-5 px-14 2xl:px-24 2xl:gap-10 items-center">
+    <main className="bg-[#ffe6a7] max-sm:pb-20 sm:pb-14 overflow-auto">
+      <div className="flex flex-col lg:flex-row justify-center  2xl:-mt-0 -mt-10 max-sm:-mt-5 px-14 2xl:px-24 2xl:gap-10 items-center">
         <AboutPhoto/>
         <div className="max-sm:text-center max-sm:-mt-5">
           <h1 className="2xl:text-2xl text-lg max-sm:text-sm text-[#282a29] font-FiraMedium">

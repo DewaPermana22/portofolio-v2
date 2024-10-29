@@ -22,7 +22,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] 2xl:w-[498px] 2xl:h-[498px]  overflow-hidden"
+          className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] 2xl:w-[498px] 2xl:h-[498px]  overflow-hidden"
         >
           <Image
             src="/ProfilePict.svg"
@@ -36,7 +36,7 @@ const Photo = () => {
 
         {/* SVG animasi lingkaran */}
         <motion.svg
-          className="absolute w-[200px] lg:w-[320px] 2xl:w-[400px]"
+          className="absolute w-[200px] sm:w-[240px] lg:w-[320px] 2xl:w-[400px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"

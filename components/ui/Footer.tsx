@@ -3,7 +3,7 @@ import { FaWhatsapp,FaInstagram,FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className='bg-[#ffe6a7] text-[#282a29] flex xl:flex-row max-sm:flex-col-reverse px-24 max-sm:px-0  justify-between lg:mt-2 2xl:mt-32 sm:mt-48 pt-8'>
+    <footer className='bg-[#ffe6a7] text-[#282a29] flex xl:flex-row max-sm:flex-col-reverse px-24 max-sm:px-0  justify-between lg:mt-2 2xl:mt-32 sm:mt-14 sm:px-10 pt-8'>
         <div className='max-sm:justify-center max-sm:flex max-sm:flex-col max-sm:items-center'>
         <h1 className='font-FiraBold sm:text-2xl  2xl:text-3xl'>Designed to Inspire. Built to Last.</h1>
         <h1 className='font-FiraMedium 2xl:text-lg sm:text-sm'>&copy; 2024 Dewa Permana. All Rights Reserved</h1>

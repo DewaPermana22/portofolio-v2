@@ -45,13 +45,13 @@ function Page() {
     <motion.section 
     initial={{opacity:0}}
     animate={{opacity:1, transition:{delay:2.4, duration:0.4, ease : "easeIn"}}}
-    className='flex flex-col min-h-[80vh] justify-center xl:py-0 xl:mt-5 2xl:py-12 xl:px-0 max-sm:px-10 max-sm:py-20'>
+    className='flex flex-col min-h-[80vh] justify-center xl:py-0 xl:mt-5 2xl:py-12 sm:py-16 xl:px-0 max-sm:px-10 max-sm:py-20'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:gap-[20px] max-sm:gap-[10px]'>
           <div className='w-full xl:w-[50%] xl:h-[406px] xl:flex text-[#282a29] flex-col xl:justify-between order-2 xl:order-none'>
-            <div className='flex flex-col xl:gap-[30px] max-sm:gap-[20px]'>
-              <div className='2xl:text-8xl lg:text-6xl font-JetBrain font-extrabold leading-none text-outline max-sm:text-5xl'>{Project.num}</div>
-              <h2 className='2xl:text-[42px] lg:text-[25px] leading-none text-[#282a29] font-JetBrain font-bold capitalize'>{Project.category} Project</h2>
+            <div className='flex flex-col sm:gap-[25px] xl:gap-[30px] max-sm:gap-[20px]'>
+              <div className='2xl:text-8xl sm:text-6xl font-JetBrain font-extrabold leading-none text-outline max-sm:text-5xl'>{Project.num}</div>
+              <h2 className='2xl:text-[42px] lg:text-[25px] sm:text-[30px] leading-none text-[#282a29] font-JetBrain font-bold capitalize'>{Project.category} Project</h2>
               <h2 className='text-[42px] max-sm:text-[30px] leading-none text-[#282a29] lg:-mt-2 2xl:-mt-0 font-JetBrain font-bold capitalize'> {Project.title}
               </h2>
               <p className='text-[#282a29]/80 font-FiraMedium max-sm:text-xs text-justify xl:max-w-[450px] 2xl:text-lg xl:text-sm'>{Project.desxription}</p>
@@ -75,7 +75,7 @@ function Page() {
           >
             {Projects.map((Project, index) => {
               return ( <SwiperSlide key={index} className='w-full'>
-                <div className='h-[460px] max-sm:h-[360px] relative group flex justify-center items-center bg-pink-50'>
+                <div className='h-[460px] max-sm:h-[360px] sm:h-[400px] sm:w-[500px] relative group sm:mx-auto flex justify-center items-center bg-pink-50'>
                   <div></div>
                   <div className='relative w-full h-full'>
                     <Image src={Project.image} fill className='object-cover pointer-events-none' alt='project'/>

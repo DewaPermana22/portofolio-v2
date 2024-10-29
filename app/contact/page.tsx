@@ -10,7 +10,7 @@ function page() {
   return (
     <motion.section
     initial={{opacity:0}} animate={{opacity:1, transition:{delay:2, duration:0.4, ease : "easeIn"}}} className='flex justify-around max-sm:flex-col items-center max-sm:mt-5 mt-10'>
-      <div className="flex ms-10 max-sm:ms-0 max-sm:px-10 flex-col text-justify gap-5 text-[#282a29]">
+      <div className="flex ms-10 max-sm:ms-0 max-sm:px-10 sm:ms-0 flex-col text-justify gap-5 text-[#282a29]">
       <h1 className='text-4xl max-sm:text-2xl font-FiraBold'>Lets Work Together!</h1>
       <h1 className='text-xl max-sm:text-sm font-semibold font-JetBrain text=[#282a29]/80 max-w-[600px]'>
       I&apos;m here to help bring creative ideas to life. Let&apos;s connect and make something great together!
