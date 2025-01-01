@@ -32,6 +32,16 @@ const Projects = [
       {name : 'flutter'},{name : "laravel"}, {name:"mySql"}],
     image : '/simaska.svg'
   },
+  {
+    num : "03",
+    category : "mobile app",
+    title : "Coffee Sales App",
+    desxription : 
+    "A coffee sales application designed to streamline order management and inventory tracking. It helps coffee shops operate efficiently and enhance customer satisfaction.",
+    stack : [
+      {name : 'Kotlin'},{name : "ASP.NET"}],
+    image : '/ezemCoffee.svg'
+  },
 ];
 
 function Page() {
@@ -75,10 +85,10 @@ function Page() {
           >
             {Projects.map((Project, index) => {
               return ( <SwiperSlide key={index} className='w-full'>
-                <div className='h-[460px] max-sm:h-[360px] sm:h-[400px] sm:w-[500px] relative group sm:mx-auto flex justify-center items-center bg-pink-50'>
+                <div className='h-[460px] max-sm:h-[360px] sm:h-[400px] sm:w-[500px] xl:w-[800px] xl:h-[600px] relative group sm:mx-auto flex justify-center items-center bg-pink-50'>
                   <div></div>
                   <div className='relative w-full h-full'>
-                    <Image src={Project.image} fill className='object-cover pointer-events-none' alt='project'/>
+                    <Image src={Project.image} fill className='object-cover  pointer-events-none' alt='project'/>
                   </div>
                 </div>
               </SwiperSlide>
